@@ -1,7 +1,7 @@
 Expressjs and jQuery File Upload 
 =================
 
-A simple express module for integrating jQuery File Upload with Express js using ```blueimp-file-upload-expressjs``` node module
+An example consuming ```blueimp-file-upload-expressjs``` node module
 
 Demo : http://expressjs-fileupload.cloudno.de/
 
