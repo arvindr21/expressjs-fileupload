@@ -13,8 +13,8 @@ var options = {
     inlineFileTypes:  /\.(gif|jpe?g|png)$/i,
     imageTypes:  /\.(gif|jpe?g|png)$/i,
     imageVersions: {
-        width:  80,
-        height: 80
+        maxWidth:  80,
+        maxHeight: 80
     },
     accessControl: {
         allowOrigin: '*',
