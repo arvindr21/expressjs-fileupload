@@ -21,6 +21,9 @@ var options = {
         allowMethods: 'OPTIONS, HEAD, GET, POST, PUT, DELETE',
         allowHeaders: 'Content-Type, Content-Range, Content-Disposition'
     },
+    storage : {
+        type : 'local'
+    },
     nodeStatic: {
         cache:  3600 // seconds to cache served files
     }
