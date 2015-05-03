@@ -21,8 +21,8 @@ var options = {
         allowMethods: 'OPTIONS, HEAD, GET, POST, PUT, DELETE',
         allowHeaders: 'Content-Type, Content-Range, Content-Disposition'
     },
-    storage: {
-        type: 'local'
+    storage : {
+        type : 'local'
     },
     nodeStatic: {
         cache: 3600 // seconds to cache served files
@@ -34,6 +34,7 @@ var uploader = require('blueimp-file-upload-expressjs')(options);
 
 module.exports = function(router) {
     router.get('/upload', function(req, res) {
+<<<<<<< HEAD
         uploader.get(req, res, function(err, obj) {
             res.send(JSON.stringify(obj));
         });
@@ -52,6 +53,26 @@ module.exports = function(router) {
             res.send(JSON.stringify(obj));
         });
 
+=======
+      uploader.get(req, res, function (err, obj) {
+            res.send(JSON.stringify(obj)); 
+      });
+      
+    });
+
+    router.post('/upload', function(req, res) {
+      uploader.post(req, res, function (err, obj) {
+            res.send(JSON.stringify(obj)); 
+      });
+      
+    });
+
+    router.delete('/uploaded/files/:name', function(req, res) {
+      uploader.delete(req, res, function (err, obj) {
+            res.send(JSON.stringify(obj)); 
+      });
+      
+>>>>>>> fdd681e7f08ddc38b4197a71f2b6c0bc23321597
     });
     return router;
 }
