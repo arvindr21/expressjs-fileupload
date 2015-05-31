@@ -1,4 +1,4 @@
-Expressjs and jQuery File Upload 
+Expressjs and jQuery File Upload
 =================
 
 An example consuming ```blueimp-file-upload-expressjs``` node module
@@ -12,4 +12,7 @@ Install
 
 * Download or clone this repo
 * run ```npm install```
-* run ```node www/bin```
+* run ```node bin/www```
+
+for debug messages
+* run ```DEBUG=express:* node app.js```
